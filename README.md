@@ -15,3 +15,13 @@ https://stackoverflow.com/questions/76513866/issue-creating-the-backstage-app-us
 5. During the local startup of backstage instance , while creating a task following error may be encountered 
 "When using Node.js version 20 or newer, the scaffolder backend plugin requires that it be started with the --no-node-snapshot option.  Please make sure that you have NODE_OPTIONS=--no-node-snapshot in your environment."
 Fix for this -> "export NODE_OPTIONS=--no-node-snapshot" in the terminal window before running yarn dev command
+
+6. Once app is created, go to the app folder and create a plugin.
+7. To create app follow this page https://backstage.io/docs/getting-started/
+8. To create plugin follow this page https://backstage.io/docs/plugins/create-a-plugin
+9. localhost:3000 will be app page , localhost:3000/my-plugin will be plugin page (here my-plugin is the name/label of example plugin)
+10. Following versions are working properly for me
+npm -v 10.7.0
+node -v v20.15.0
+yarn -v 1.22.19
+nvm -v 0.39.7
